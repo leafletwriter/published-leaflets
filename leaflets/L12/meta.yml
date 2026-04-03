@@ -1,0 +1,20 @@
+meta_version: 2
+slug: leaflet-12
+lid: L12
+title: Leaflet 12
+department: clinical-genetics-service
+version: 1
+status: published
+owner: admin@lw.com
+lead_authors: author@hospital.nhs.uk
+mandatory_reviewers: reviewer@hospital.nhs.uk
+additional_reviewers: []
+review_state:
+  reviewer@hospital.nhs.uk: approved
+approved_by: reviewer@hospital.nhs.uk
+approved_at: '2026-04-03T20:20:43Z'
+page_count: 4
+created_at: '2026-04-03T16:44:10Z'
+archived_reason: ~
+pr_number: 10
+annual_review_due: '2027-04-03'
