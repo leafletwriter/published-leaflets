@@ -5,6 +5,7 @@ Published patient information leaflets. Download the HTML version to read online
 | Title | Ref | Review Due | HTML | PDF | Booklet PDF |
 |-------|-----|------------|------|-----|-------------|
 | Leaflet 2 | L2 | 2027-04-04 | [View](https://leafletwriter.github.io/published-leaflets/core/L2/L2.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L2/L2.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L2/L2-booklet.pdf) |
+| Leaflet 3 | L3 | 2027-04-04 | [View](https://leafletwriter.github.io/published-leaflets/core/L3/L3.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L3/L3.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L3/L3-booklet.pdf) |
 
 ---
 
