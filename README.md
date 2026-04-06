@@ -4,9 +4,7 @@ Published patient information leaflets. Download the HTML version to read online
 
 | Title | Ref | Review Due | HTML | PDF | Booklet PDF |
 |-------|-----|------------|------|-----|-------------|
-| Leaflet 2 | L2 | 2027-04-04 | [View](https://leafletwriter.github.io/published-leaflets/core/L2/L2.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L2/L2.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L2/L2-booklet.pdf) |
-| Leaflet 3 | L3 | 2027-04-04 | [View](https://leafletwriter.github.io/published-leaflets/core/L3/L3.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L3/L3.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L3/L3-booklet.pdf) |
-| Leaflet 6 | L6 | 2027-04-06 | [View](https://leafletwriter.github.io/published-leaflets/core/L6/L6.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L6/L6.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L6/L6-booklet.pdf) |
+| Fake Leaflet 1 | FH001 | 2027-04-06 | [View](https://leafletwriter.github.io/published-leaflets/fake-hospital/FH001/FH001.html) | [Download](https://leafletwriter.github.io/published-leaflets/fake-hospital/FH001/FH001.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/fake-hospital/FH001/FH001-booklet.pdf) |
 
 ---
 
