@@ -1,0 +1,21 @@
+meta_version: 2
+lid: L20
+org_id: core
+title: Leaflet 20
+department: department-a
+version: 1
+status: published
+self_reviewed: no
+owner: tomsmith_uk@hotmail.com
+lead_authors: a.author@example.com
+mandatory_reviewers: r.reviewer@example.com
+additional_reviewers: []
+review_state:
+  r.reviewer@example.com: approved
+approved_by: r.reviewer@example.com
+approved_at: '2026-04-06T07:14:50Z'
+annual_review_due: '2027-04-06'
+page_count: 4
+created_at: '2026-04-06T06:54:30Z'
+archived_reason: ~
+pr_number: 14
