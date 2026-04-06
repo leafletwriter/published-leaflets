@@ -8,6 +8,7 @@ Published patient information leaflets. Download the HTML version to read online
 | Leaflet 20 | L20 | 2027-04-06 | [View](https://leafletwriter.github.io/published-leaflets/core/L20/L20.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L20/L20.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L20/L20-booklet.pdf) |
 | Leaflet 3 | L3 | 2027-04-04 | [View](https://leafletwriter.github.io/published-leaflets/core/L3/L3.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L3/L3.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L3/L3-booklet.pdf) |
 | Leaflet 6 | L6 | 2027-04-06 | [View](https://leafletwriter.github.io/published-leaflets/core/L6/L6.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L6/L6.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L6/L6-booklet.pdf) |
+| BRCA1, BRCA2 & PALB2 Gene Testing | PIL001 | 2027-04-06 | [View](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001-booklet.pdf) |
 
 ---
 
