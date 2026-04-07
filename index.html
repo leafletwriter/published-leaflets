@@ -45,6 +45,7 @@ mark.lw-hl{background:#fff3cd;padding:0;}
 <tbody>
 <tr><td>Leaflet 2</td><td>L2</td><td>2027-04-04</td><td><a href='core/L2/L2.html' class='btn btn-sm btn-outline-primary'>View</a></td><td><a href='core/L2/L2.pdf' class='btn btn-sm btn-outline-secondary' download>PDF</a></td><td><a href='core/L2/L2-booklet.pdf' class='btn btn-sm btn-outline-secondary' download>Booklet</a></td></tr>
 <tr><td>Leaflet 20</td><td>L20</td><td>2027-04-06</td><td><a href='core/L20/L20.html' class='btn btn-sm btn-outline-primary'>View</a></td><td><a href='core/L20/L20.pdf' class='btn btn-sm btn-outline-secondary' download>PDF</a></td><td><a href='core/L20/L20-booklet.pdf' class='btn btn-sm btn-outline-secondary' download>Booklet</a></td></tr>
+<tr><td>Leaflet 21</td><td>L21</td><td>2027-04-06</td><td><a href='core/L21/L21.html' class='btn btn-sm btn-outline-primary'>View</a></td><td><a href='core/L21/L21.pdf' class='btn btn-sm btn-outline-secondary' download>PDF</a></td><td><a href='core/L21/L21-booklet.pdf' class='btn btn-sm btn-outline-secondary' download>Booklet</a></td></tr>
 <tr><td>Leaflet 3</td><td>L3</td><td>2027-04-04</td><td><a href='core/L3/L3.html' class='btn btn-sm btn-outline-primary'>View</a></td><td><a href='core/L3/L3.pdf' class='btn btn-sm btn-outline-secondary' download>PDF</a></td><td><a href='core/L3/L3-booklet.pdf' class='btn btn-sm btn-outline-secondary' download>Booklet</a></td></tr>
 <tr><td>Leaflet 6</td><td>L6</td><td>2027-04-06</td><td><a href='core/L6/L6.html' class='btn btn-sm btn-outline-primary'>View</a></td><td><a href='core/L6/L6.pdf' class='btn btn-sm btn-outline-secondary' download>PDF</a></td><td><a href='core/L6/L6-booklet.pdf' class='btn btn-sm btn-outline-secondary' download>Booklet</a></td></tr>
 <tr><td>BRCA1, BRCA2 &amp; PALB2 Gene Testing</td><td>PIL001</td><td>2027-04-06</td><td><a href='core/PIL001/PIL001.html' class='btn btn-sm btn-outline-primary'>View</a></td><td><a href='core/PIL001/PIL001.pdf' class='btn btn-sm btn-outline-secondary' download>PDF</a></td><td><a href='core/PIL001/PIL001-booklet.pdf' class='btn btn-sm btn-outline-secondary' download>Booklet</a></td></tr>
@@ -52,12 +53,35 @@ mark.lw-hl{background:#fff3cd;padding:0;}
 </table>
   </div>
 </details>
-<p class='text-muted small mt-3'>Last updated: 2026-04-06 22:30 UTC</p>
+<p class='text-muted small mt-3'>Last updated: 2026-04-07 17:40 UTC</p>
 </div>
 <script>
 (function(){
   var input = document.getElementById('lw-search');
   if (!input) return;
+  function highlightCell(td, re) {
+    var walker = document.createTreeWalker(td, NodeFilter.SHOW_TEXT, null);
+    var nodes = [];
+    var n;
+    while ((n = walker.nextNode())) nodes.push(n);
+    nodes.forEach(function(tn) {
+      re.lastIndex = 0;
+      if (!re.test(tn.nodeValue)) return;
+      re.lastIndex = 0;
+      var frag = document.createDocumentFragment();
+      var last = 0, m;
+      while ((m = re.exec(tn.nodeValue)) !== null) {
+        frag.appendChild(document.createTextNode(tn.nodeValue.slice(last, m.index)));
+        var mark = document.createElement('mark');
+        mark.className = 'lw-hl';
+        mark.textContent = m[0];
+        frag.appendChild(mark);
+        last = m.index + m[0].length;
+      }
+      frag.appendChild(document.createTextNode(tn.nodeValue.slice(last)));
+      tn.parentNode.replaceChild(frag, tn);
+    });
+  }
   input.addEventListener('input', function(){
     var term = this.value.trim();
     // Remove previous highlights
@@ -67,7 +91,7 @@ mark.lw-hl{background:#fff3cd;padding:0;}
     if (!term) return;
     var re = new RegExp('(' + term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
     document.querySelectorAll('.lw-org-body td').forEach(function(td){
-      td.innerHTML = td.innerHTML.replace(re, '<mark class="lw-hl">$1</mark>');
+      highlightCell(td, re);
     });
     // Open accordion sections that contain a match
     document.querySelectorAll('.lw-org-accordion').forEach(function(d){
