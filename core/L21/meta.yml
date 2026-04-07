@@ -1,0 +1,21 @@
+meta_version: 2
+lid: L21
+org_id: core
+title: Leaflet 21
+department: department-a
+version: 1
+status: published
+self_reviewed: no
+owner: a.admin@example.com
+lead_authors: a.author@example.com
+mandatory_reviewers: r.reviewer@example.com
+additional_reviewers: []
+review_state:
+  r.reviewer@example.com: approved
+approved_by: r.reviewer@example.com
+approved_at: '2026-04-07T17:39:42Z'
+annual_review_due: '2027-04-06'
+created_at: '2026-04-06T18:39:23Z'
+archived_reason: ~
+pr_number: 16
+subtitle: This is a leaflet for you, especially if you like the number 21
