@@ -1,0 +1,23 @@
+meta_version: 2
+lid: L30
+org_id: core
+title: Leaflet 30
+department: department-a
+version: 1
+status: published
+self_reviewed: no
+owner: a.admin@example.com
+lead_authors: a.author@example.com
+mandatory_reviewers: r.reviewer@example.com
+additional_reviewers: []
+review_state:
+  r.reviewer@example.com: approved
+approved_by: r.reviewer@example.com
+approved_at: '2026-04-07T23:02:15Z'
+reviewed_at: '2026-04-07T23:00:39Z'
+annual_review_due: '2028-04-07'
+review_frequency_months: 24
+created_at: '2026-04-07T22:21:56Z'
+archived_reason: ~
+pr_number: 18
+subtitle: thirty thirty
