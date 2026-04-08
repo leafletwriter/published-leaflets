@@ -4,7 +4,7 @@ org_id: core
 title: Leaflet 3
 department: department-a
 version: 1
-status: published
+status: archived
 owner: a.admin@example.com
 lead_authors: a.author@example.com
 mandatory_reviewers: r.reviewer@example.com
@@ -16,5 +16,5 @@ approved_at: '2026-04-04T00:56:45Z'
 annual_review_due: '2027-04-04'
 page_count: 4
 created_at: '2026-04-04T00:44:19Z'
-archived_reason: ~
+archived_reason: ''
 pr_number: 12
