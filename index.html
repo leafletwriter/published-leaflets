@@ -13,6 +13,10 @@
 .lw-logo{width:48px;height:48px;border-radius:50%;object-fit:cover;margin-right:1rem;flex-shrink:0;}
 #lw-search{width:220px;}
 thead th{background:#f0f4f8;}
+thead th[data-sort]{cursor:pointer;user-select:none;}
+thead th[data-sort]::after{content:' \2195';opacity:.5;}
+thead th.sort-asc::after{content:' \2191';opacity:1;}
+thead th.sort-desc::after{content:' \2193';opacity:1;}
 .lw-org-accordion{margin-bottom:1rem;}
 .lw-org-accordion summary{cursor:pointer;font-weight:600;padding:.75rem 1rem;background:#f0f4f8;border-radius:.375rem;margin-bottom:.5rem;list-style:none;display:flex;align-items:center;}
 .lw-org-accordion summary::-webkit-details-marker{display:none;}
@@ -21,7 +25,9 @@ thead th{background:#f0f4f8;}
 .lw-org-body{padding:0 .5rem;}
 mark.lw-hl{background:#fff3cd;padding:0;}
 mark.lw-hl-active{background:#fd7e14;color:#fff;padding:0;}
-#lw-search-count{font-size:.85rem;color:rgba(255,255,255,.9);margin-left:.5rem;white-space:nowrap;min-width:4rem;}
+#lw-search-count{font-size:.85rem;color:rgba(255,255,255,.9);margin:0 .4rem;white-space:nowrap;min-width:4rem;text-align:center;}
+#lw-prev,#lw-next{background:transparent;border:1px solid rgba(255,255,255,.5);color:#fff;border-radius:.25rem;padding:.2rem .45rem;font-size:.85rem;line-height:1;cursor:pointer;}
+#lw-prev:hover,#lw-next:hover{background:rgba(255,255,255,.2);}
 </style>
 </head>
 <body>
@@ -38,18 +44,20 @@ mark.lw-hl-active{background:#fd7e14;color:#fff;padding:0;}
       <div class='lw-search-wrap'>
         <input type='search' id='lw-search' class='form-control'
                placeholder='Search leaflets...' aria-label='Search leaflets'>
+        <button id='lw-prev' aria-label='Previous result' title='Previous result'>&#9664;</button>
         <span id='lw-search-count' aria-live='polite'></span>
+        <button id='lw-next' aria-label='Next result' title='Next result'>&#9654;</button>
       </div>
     </div>
   </div>
 </div>
 <div class='container'>
-<p class='mb-4'>Leafletwriter helps NHS organisations create, review, and publish patient information leaflets. Browse the published leaflets below, or visit <a href='https://leafletwriter.org'>leafletwriter.org</a> to find out more.</p>
+<p class='mb-4'>Leafletwriter helps organisations create, review, publish, and manage publicly available information leaflets. Browse the published leaflets below, or visit <a href='https://leafletwriter.org'>leafletwriter.org</a> to find out more.</p>
 <details class='lw-org-accordion' open>
   <summary>core</summary>
   <div class='lw-org-body'>
 <table class='table table-hover align-middle'>
-<thead><tr><th>Title</th><th>Ref</th><th>Version</th><th>Publish Date</th><th>Review Due</th><th></th><th></th><th></th></tr></thead>
+<thead><tr><th data-sort='0'>Leaflet Title</th><th data-sort='1'>Leaflet ID</th><th data-sort='2'>Version</th><th data-sort='3'>Publish Date</th><th data-sort='4'>Review Due</th><th></th><th></th><th></th></tr></thead>
 <tbody>
 <tr><td>Leaflet 2</td><td>L2</td><td>1</td><td>Apr 2026</td><td>Apr 2027</td><td><a href='core/L2/L2.html' class='btn btn-sm btn-outline-primary'>View</a></td><td><a href='core/L2/L2.pdf' class='btn btn-sm btn-outline-secondary' download>PDF</a></td><td><a href='core/L2/L2-booklet.pdf' class='btn btn-sm btn-outline-secondary' download>Booklet</a></td></tr>
 <tr><td>Leaflet 20</td><td>L20</td><td>1</td><td>Apr 2026</td><td>Apr 2027</td><td><a href='core/L20/L20.html' class='btn btn-sm btn-outline-primary'>View</a></td><td><a href='core/L20/L20.pdf' class='btn btn-sm btn-outline-secondary' download>PDF</a></td><td><a href='core/L20/L20-booklet.pdf' class='btn btn-sm btn-outline-secondary' download>Booklet</a></td></tr>
@@ -63,7 +71,7 @@ mark.lw-hl-active{background:#fd7e14;color:#fff;padding:0;}
 </table>
   </div>
 </details>
-<p class='text-muted small mt-3'>Last updated: 2026-04-08 07:07 UTC</p>
+<p class='text-muted small mt-3'>Last updated: 2026-04-08 19:12 UTC</p>
 </div>
 <script>
 (function(){
@@ -147,6 +155,47 @@ mark.lw-hl-active{background:#fd7e14;color:#fff;padding:0;}
       applyActive();
       updateCounter();
     }
+  });
+  var prevBtn = document.getElementById('lw-prev');
+  var nextBtn = document.getElementById('lw-next');
+  if (prevBtn) prevBtn.addEventListener('click', function(){
+    var marks = document.querySelectorAll('mark.lw-hl');
+    if (!marks.length) return;
+    activeIdx = (activeIdx - 1 + marks.length) % marks.length;
+    applyActive();
+    updateCounter();
+  });
+  if (nextBtn) nextBtn.addEventListener('click', function(){
+    var marks = document.querySelectorAll('mark.lw-hl');
+    if (!marks.length) return;
+    activeIdx = (activeIdx + 1) % marks.length;
+    applyActive();
+    updateCounter();
+  });
+})();
+</script>
+<script>
+(function(){
+  document.querySelectorAll('thead th[data-sort]').forEach(function(th) {
+    th.addEventListener('click', function() {
+      var table = th.closest('table');
+      var tbody = table.querySelector('tbody');
+      var idx = parseInt(th.getAttribute('data-sort'), 10);
+      var asc = th.getAttribute('data-sort-dir') !== 'asc';
+      table.querySelectorAll('th[data-sort]').forEach(function(h) {
+        h.removeAttribute('data-sort-dir');
+        h.classList.remove('sort-asc', 'sort-desc');
+      });
+      th.setAttribute('data-sort-dir', asc ? 'asc' : 'desc');
+      th.classList.add(asc ? 'sort-asc' : 'sort-desc');
+      var rows = Array.from(tbody.querySelectorAll('tr'));
+      rows.sort(function(a, b) {
+        var at = a.children[idx] ? a.children[idx].textContent.trim() : '';
+        var bt = b.children[idx] ? b.children[idx].textContent.trim() : '';
+        return asc ? at.localeCompare(bt) : bt.localeCompare(at);
+      });
+      rows.forEach(function(r) { tbody.appendChild(r); });
+    });
   });
 })();
 </script>

@@ -2,8 +2,8 @@
 
 Published patient information leaflets. Download the HTML version to read online, or PDF to print.
 
-| Title | Ref | Version | Publish Date | Review Due | HTML | PDF | Booklet PDF |
-|-------|-----|---------|--------------|------------|------|-----|-------------|
+| Leaflet Title | Leaflet ID | Version | Publish Date | Review Due | HTML | PDF | Booklet PDF |
+|---------------|-----------|---------|--------------|------------|------|-----|-------------|
 | Leaflet 2 | L2 | 1 | Apr 2026 | Apr 2027 | [View](https://leafletwriter.github.io/published-leaflets/core/L2/L2.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L2/L2.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L2/L2-booklet.pdf) |
 | Leaflet 20 | L20 | 1 | Apr 2026 | Apr 2027 | [View](https://leafletwriter.github.io/published-leaflets/core/L20/L20.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L20/L20.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L20/L20-booklet.pdf) |
 | Leaflet 21 | L21 | 1 | Apr 2026 | Apr 2027 | [View](https://leafletwriter.github.io/published-leaflets/core/L21/L21.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L21/L21.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L21/L21-booklet.pdf) |
