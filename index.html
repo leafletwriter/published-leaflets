@@ -59,7 +59,6 @@ mark.lw-hl-active{background:#fd7e14;color:#fff;padding:0;}
 <table class='table table-hover align-middle'>
 <thead><tr><th data-sort='0'>Leaflet Title</th><th data-sort='1'>Leaflet ID</th><th data-sort='2'>Version</th><th data-sort='3'>Publish Date</th><th data-sort='4'>Review Due</th><th></th><th></th><th></th></tr></thead>
 <tbody>
-<tr><td>Leaflet 2</td><td>L2</td><td>1</td><td>Apr 2026</td><td>Apr 2027</td><td><a href='core/L2/L2.html' class='btn btn-sm btn-outline-primary'>View</a></td><td><a href='core/L2/L2.pdf' class='btn btn-sm btn-outline-secondary' download>PDF</a></td><td><a href='core/L2/L2-booklet.pdf' class='btn btn-sm btn-outline-secondary' download>Booklet</a></td></tr>
 <tr><td>Leaflet 20</td><td>L20</td><td>1</td><td>Apr 2026</td><td>Apr 2027</td><td><a href='core/L20/L20.html' class='btn btn-sm btn-outline-primary'>View</a></td><td><a href='core/L20/L20.pdf' class='btn btn-sm btn-outline-secondary' download>PDF</a></td><td><a href='core/L20/L20-booklet.pdf' class='btn btn-sm btn-outline-secondary' download>Booklet</a></td></tr>
 <tr><td>Leaflet 21</td><td>L21</td><td>1</td><td>Apr 2026</td><td>Apr 2027</td><td><a href='core/L21/L21.html' class='btn btn-sm btn-outline-primary'>View</a></td><td><a href='core/L21/L21.pdf' class='btn btn-sm btn-outline-secondary' download>PDF</a></td><td><a href='core/L21/L21-booklet.pdf' class='btn btn-sm btn-outline-secondary' download>Booklet</a></td></tr>
 <tr><td>Leaflet 3</td><td>L3</td><td>1</td><td>Apr 2026</td><td>Apr 2027</td><td><a href='core/L3/L3.html' class='btn btn-sm btn-outline-primary'>View</a></td><td><a href='core/L3/L3.pdf' class='btn btn-sm btn-outline-secondary' download>PDF</a></td><td><a href='core/L3/L3-booklet.pdf' class='btn btn-sm btn-outline-secondary' download>Booklet</a></td></tr>
@@ -72,7 +71,7 @@ mark.lw-hl-active{background:#fd7e14;color:#fff;padding:0;}
 </table>
   </div>
 </details>
-<p class='text-muted small mt-3'>Last updated: 2026-04-08 22:00 UTC</p>
+<p class='text-muted small mt-3'>Last updated: 2026-04-08 23:09 UTC</p>
 </div>
 <script>
 (function(){
@@ -135,7 +134,7 @@ mark.lw-hl-active{background:#fd7e14;color:#fff;padding:0;}
       navBtns.forEach(function(b){ if(b) b.style.display='none'; });
       return;
     }
-    navBtns.forEach(function(b){ if(b) b.style.display=''; });
+    navBtns.forEach(function(b){ if(b) b.style.display='inline-block'; });
     var re = new RegExp('(' + term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
     document.querySelectorAll('.lw-org-body td').forEach(function(td){
       highlightCell(td, re);
