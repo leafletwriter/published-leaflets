@@ -2,16 +2,16 @@
 
 Published patient information leaflets. Download the HTML version to read online, or PDF to print.
 
-| Title | Ref | Review Due | HTML | PDF | Booklet PDF |
-|-------|-----|------------|------|-----|-------------|
-| Leaflet 2 | L2 | 2027-04-04 | [View](https://leafletwriter.github.io/published-leaflets/core/L2/L2.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L2/L2.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L2/L2-booklet.pdf) |
-| Leaflet 20 | L20 | 2027-04-06 | [View](https://leafletwriter.github.io/published-leaflets/core/L20/L20.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L20/L20.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L20/L20-booklet.pdf) |
-| Leaflet 21 | L21 | 2027-04-06 | [View](https://leafletwriter.github.io/published-leaflets/core/L21/L21.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L21/L21.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L21/L21-booklet.pdf) |
-| Leaflet 3 | L3 | 2027-04-04 | [View](https://leafletwriter.github.io/published-leaflets/core/L3/L3.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L3/L3.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L3/L3-booklet.pdf) |
-| Leaflet 30 | L30 | 2028-04-07 | [View](https://leafletwriter.github.io/published-leaflets/core/L30/L30.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L30/L30.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L30/L30-booklet.pdf) |
-| Leaflet 31 | L31 | 2028-04-07 | [View](https://leafletwriter.github.io/published-leaflets/core/L31/L31.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L31/L31.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L31/L31-booklet.pdf) |
-| Leaflet 6 | L6 | 2027-04-06 | [View](https://leafletwriter.github.io/published-leaflets/core/L6/L6.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L6/L6.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L6/L6-booklet.pdf) |
-| BRCA1, BRCA2 & PALB2 Gene Testing | PIL001 | 2027-04-06 | [View](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001-booklet.pdf) |
+| Title | Ref | Version | Publish Date | Review Due | HTML | PDF | Booklet PDF |
+|-------|-----|---------|--------------|------------|------|-----|-------------|
+| Leaflet 2 | L2 | 1 | Apr 2026 | Apr 2027 | [View](https://leafletwriter.github.io/published-leaflets/core/L2/L2.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L2/L2.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L2/L2-booklet.pdf) |
+| Leaflet 20 | L20 | 1 | Apr 2026 | Apr 2027 | [View](https://leafletwriter.github.io/published-leaflets/core/L20/L20.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L20/L20.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L20/L20-booklet.pdf) |
+| Leaflet 21 | L21 | 1 | Apr 2026 | Apr 2027 | [View](https://leafletwriter.github.io/published-leaflets/core/L21/L21.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L21/L21.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L21/L21-booklet.pdf) |
+| Leaflet 3 | L3 | 1 | Apr 2026 | Apr 2027 | [View](https://leafletwriter.github.io/published-leaflets/core/L3/L3.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L3/L3.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L3/L3-booklet.pdf) |
+| Leaflet 30 | L30 | 1 | Apr 2026 | Apr 2028 | [View](https://leafletwriter.github.io/published-leaflets/core/L30/L30.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L30/L30.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L30/L30-booklet.pdf) |
+| Leaflet 31 | L31 | 1 | Apr 2026 | Apr 2028 | [View](https://leafletwriter.github.io/published-leaflets/core/L31/L31.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L31/L31.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L31/L31-booklet.pdf) |
+| Leaflet 6 | L6 | 1 | Apr 2026 | Apr 2027 | [View](https://leafletwriter.github.io/published-leaflets/core/L6/L6.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L6/L6.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L6/L6-booklet.pdf) |
+| BRCA1, BRCA2 & PALB2 Gene Testing | PIL001 | 1 | Apr 2026 | Apr 2027 | [View](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001-booklet.pdf) |
 
 ---
 
