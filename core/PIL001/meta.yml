@@ -3,19 +3,22 @@ lid: PIL001
 org_id: core
 title: BRCA1, BRCA2 & PALB2 Gene Testing
 department: department-a
-version: 1
+version: 2
 status: published
 self_reviewed: no
 owner: a.admin@example.com
 lead_authors: a.author@example.com
-mandatory_reviewers: r.reviewer@example.com
+mandatory_reviewers: d.reviewer@example.com
 additional_reviewers: []
 review_state:
-  r.reviewer@example.com: approved
-approved_by: r.reviewer@example.com
-approved_at: '2026-04-06T15:57:23Z'
-annual_review_due: '2027-04-06'
+  d.reviewer@example.com: approved
+annual_review_due: '2028-04-08'
 page_count: 4
 created_at: '2026-04-06T15:36:07Z'
 archived_reason: ~
-pr_number: 15
+subtitle: Information for patients who have had genetic testing arranged directly
+  through their cancer treatment team (IS14)
+pr_number: 22
+reviewed_at: '2026-04-08T20:52:02Z'
+approved_by: d.reviewer@example.com
+approved_at: '2026-04-08T20:52:58Z'
