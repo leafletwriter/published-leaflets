@@ -12,7 +12,7 @@ Published patient information leaflets. Download the HTML version to read online
 | Leaflet 31 | L31 | 1 | Apr 2026 | Apr 2028 | [View](https://leafletwriter.github.io/published-leaflets/core/L31/L31.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L31/L31.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L31/L31-booklet.pdf) |
 | Leaflet 50 | L50 | 1 | Apr 2026 | Apr 2028 | [View](https://leafletwriter.github.io/published-leaflets/core/L50/L50.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L50/L50.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L50/L50-booklet.pdf) |
 | Leaflet 6 | L6 | 1 | Apr 2026 | Apr 2027 | [View](https://leafletwriter.github.io/published-leaflets/core/L6/L6.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/L6/L6.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/L6/L6-booklet.pdf) |
-| BRCA1, BRCA2 & PALB2 Gene Testing | PIL001 | 1 | Apr 2026 | Apr 2027 | [View](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001-booklet.pdf) |
+| BRCA1, BRCA2 & PALB2 Gene Testing | PIL001 | 2 | Apr 2026 | Apr 2028 | [View](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001.html) | [Download](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001.pdf) | [Download](https://leafletwriter.github.io/published-leaflets/core/PIL001/PIL001-booklet.pdf) |
 
 ---
 
