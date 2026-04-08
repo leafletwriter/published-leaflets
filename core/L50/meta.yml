@@ -3,7 +3,7 @@ lid: L50
 org_id: core
 title: Leaflet 50
 department: department-a
-version: 1
+version: 2
 status: published
 self_reviewed: no
 owner: a.admin@example.com
@@ -12,12 +12,12 @@ mandatory_reviewers: d.reviewer@example.com
 additional_reviewers: []
 review_state:
   d.reviewer@example.com: approved
-approved_by: d.reviewer@example.com
-approved_at: '2026-04-08T20:48:11Z'
-reviewed_at: '2026-04-08T20:44:46Z'
 annual_review_due: '2028-04-08'
 review_frequency_months: 24
 created_at: '2026-04-08T20:43:02Z'
 archived_reason: ~
-pr_number: 21
 subtitle: Subtitle
+pr_number: 23
+reviewed_at: '2026-04-08T23:21:07Z'
+approved_by: d.reviewer@example.com
+approved_at: '2026-04-08T23:22:52Z'
